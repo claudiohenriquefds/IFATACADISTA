@@ -8,7 +8,10 @@ module.exports = {
       user : 'developer',
       password : '123456',
       database : 'IFATACADISTA'
-    }
+    },
+    migrations:{
+      directory: './src/databases/migrations'
+    },
   },
 
   staging: {
