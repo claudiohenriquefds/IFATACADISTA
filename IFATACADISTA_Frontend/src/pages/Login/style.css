@@ -1,0 +1,39 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container form{
+    border-radius: 8px;
+    padding: 10%;
+    background-color: #fff;
+    box-shadow: 5px 5px 5px #683880;
+}
+.container form input{
+    display: block;
+    margin-bottom: 5px;
+    padding: 10px;
+    border:#683880 2px solid;
+    border-radius: 8px;
+    background-color: #fff;
+    max-width: 400px;
+    width: 400px;
+    color:#B064FF;
+
+}
+.container form button{
+    background-color: #B064FF;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 8px;
+    max-width: 400px;   
+    width: 400px;
+}
