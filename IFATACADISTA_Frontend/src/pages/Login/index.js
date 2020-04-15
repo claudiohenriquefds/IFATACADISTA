@@ -1,5 +1,5 @@
 import React from 'react';
-import { FiUser, FiLock } from 'react-icons/fi';
+import { FiUser, FiLock, FiArrowLeft } from 'react-icons/fi';
 
 import './style.css';
 
@@ -19,6 +19,9 @@ export default function Login(){
                     <a href="/register">Não está cadastrado?</a>
                 </div>
                 <button type="submit">Logar</button>
+                <div className="return">
+                    <FiArrowLeft size={18} color="#696969"/><a href="/">Voltar ao inicio</a>
+                </div>
             </form>
         </div>
     );

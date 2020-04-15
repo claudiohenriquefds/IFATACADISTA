@@ -1,5 +1,5 @@
 import React from 'react';
-import { FiUser, FiLock, FiMail, FiPhone } from 'react-icons/fi';
+import { FiUser, FiLock, FiMail, FiPhone, FiArrowLeft } from 'react-icons/fi';
 
 import './style.css';
 
@@ -28,6 +28,9 @@ export default function Register(){
                     <a href="/login">Já é cadastrado?</a>
                 </div>
                 <button type="submit">Cadastrar</button>
+                <div className="return">
+                    <FiArrowLeft size={18} color="#696969" /><a href="/">Voltar ao inicio</a>
+                </div>
             </form>
         </div>
     );
