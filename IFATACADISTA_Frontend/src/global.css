@@ -1,3 +1,5 @@
-*{
-    background-color: #B064FF;
+body{
+    background: url("./assets/Background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }

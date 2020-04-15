@@ -1,39 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
 .container{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .container form{
-    border-radius: 8px;
-    padding: 10%;
-    background-color: #fff;
-    box-shadow: 5px 5px 5px #683880;
+    margin-left: auto;
+    padding:15%;
+    text-align: center;
 }
-.container form input{
+.container form .input-with-icons{
+    border-bottom: 2px #B064FF solid;
+}
+.container form div input{
     display: block;
-    margin-bottom: 5px;
     padding: 10px;
-    border:#683880 2px solid;
-    border-radius: 8px;
-    background-color: #fff;
-    max-width: 400px;
-    width: 400px;
-    color:#B064FF;
-
+    margin-bottom: 2px;
+    border: none;
+    width: 25vw;
+}
+.container form h1{
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
 }
 .container form button{
+    padding: 10px;
+    width: 25vw;
+    margin-top: 5px;
     background-color: #B064FF;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
     text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
+    border:none;
+    color:white;
+    border-radius: 20px;
     cursor: pointer;
-    width: 100%;
-    border-radius: 8px;
-    max-width: 400px;   
-    width: 400px;
+}
+.container form div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.container form div a{
+    text-decoration:none;
+    margin: 10px;
+    color:#696969;
+    font-family: sans-serif;
 }
