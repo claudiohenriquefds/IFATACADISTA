@@ -1,31 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
-.container-login{
+.container-register{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.container-login form{
+.container-register form{
     margin-left: auto;
     padding:15%;
-    padding-top: 10%;
+    padding-top: 5%;
     text-align: center;
 }
-.container-login form .input-with-icons{
+.container-register form .input-with-icons{
     border-bottom: 2px #B064FF solid;
 }
-.container-login form div input{
+.container-register form div input{
     display: block;
     padding: 10px;
     margin-bottom: 2px;
     border: none;
     width: 25vw;
 }
-.container-login form h1{
+.container-register form h1{
     font-family: 'Oswald', sans-serif;
     text-align: center;
 }
-.container-login form button{
+.container-register form button{
     padding: 10px;
     width: 25vw;
     margin-top: 5px;
@@ -36,13 +36,13 @@
     border-radius: 20px;
     cursor: pointer;
 }
-.container-login form div{
+.container-register form div{
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
-.container-login form div a{
+.container-register form div a{
     text-decoration:none;
     margin: 10px;
     color:#696969;
@@ -50,19 +50,19 @@
 }
 
 @media (max-width:700px){
-    .container-login{
-        margin-top: 150px;
+    .container-register{
+        margin-top: 100px;
         background-color: white;
         border-radius: 8px;
         box-shadow:2px 2px 50px black;
     }
-    .container-login form div input{
+    .container-register form div input{
         width: 60vw;
     }
-    .container-login form button{
+    .container-register form button{
         width: 60vw;
     }
-    .container-login form div a{
+    .container-register form div a{
         font-size: 12px;
     }
 }

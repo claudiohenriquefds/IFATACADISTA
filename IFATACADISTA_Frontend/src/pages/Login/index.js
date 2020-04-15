@@ -5,18 +5,18 @@ import './style.css';
 
 export default function Login(){
     return(
-        <div className="container">
+        <div className="container-login">
             <form>
                 <h1>Bem Vindo</h1>
                 <div className="input-with-icons">
-                    <FiUser size={20} color="#696969"/><input type="name" placeholder="Insira o seu usuário"/>
+                    <FiUser size={20} color="#696969"/><input type="email" placeholder="Insira o seu email"/>
                 </div>
                 <div className="input-with-icons">
                     <FiLock size={20} color="#696969"/><input type="password" placeholder="Insira o sua senha"/>
                 </div>
                 <div>
                     <a href="#">Esqueceu a senha?</a>
-                    <a href="#">Não está cadastrado?</a>
+                    <a href="/register">Não está cadastrado?</a>
                 </div>
                 <button type="submit">Logar</button>
             </form>

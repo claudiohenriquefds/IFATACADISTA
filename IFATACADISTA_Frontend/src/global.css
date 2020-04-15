@@ -3,3 +3,8 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
 }
+@media (max-width:700px){
+    body{
+        background: url("./assets/Background-portrait.png");
+    }
+}
