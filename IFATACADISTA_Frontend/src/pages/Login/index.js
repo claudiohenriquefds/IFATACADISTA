@@ -15,7 +15,7 @@ export default function Login(){
                     <FiLock size={20} color="#696969"/><input type="password" placeholder="Insira o sua senha"/>
                 </div>
                 <div>
-                    <a href="#">Esqueceu a senha?</a>
+                    <a href="/">Esqueceu a senha?</a>
                     <a href="/register">Não está cadastrado?</a>
                 </div>
                 <button type="submit">Logar</button>

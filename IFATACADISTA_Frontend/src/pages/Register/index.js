@@ -24,7 +24,7 @@ export default function Register(){
                     <FiLock size={20} color="#696969"/><input type="password" placeholder="Confirme sua senha"/>
                 </div>
                 <div>
-                    <a href="#">Termos</a>
+                    <a href="/">Termos</a>
                     <a href="/login">Já é cadastrado?</a>
                 </div>
                 <button type="submit">Cadastrar</button>
