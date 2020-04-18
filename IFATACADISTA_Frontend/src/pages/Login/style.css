@@ -55,10 +55,7 @@
 
 @media (max-width:700px){
     .container-login{
-        margin-top: 150px;
-        background-color: white;
-        border-radius: 8px;
-        box-shadow:2px 2px 50px black;
+        margin-top: 130px;
     }
     .container-login form div input{
         width: 60vw;
@@ -69,4 +66,12 @@
     .container-login form div a{
         font-size: 12px;
     }
+}
+@media (max-width:1000px){
+    .container-login form{
+        background: #fff;
+        border-radius: 8px;
+        transition: all 0.8s;
+        box-shadow:2px 8px 50px rgb(0, 0, 0,0.5);
+    }   
 }

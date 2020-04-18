@@ -23,9 +23,9 @@ export default function Index(){
                     <div class="dropdown">
                         <span>Categorias</span>
                         <div class="dropdown-content">
-                            <p>Roupas</p>
-                            <p>Roupas</p>
-                            <p>Camisolas</p>
+                            <a href="/">Roupas</a>
+                            <a href="/">Roupas</a>
+                            <a href="/">Roupas</a>
 
                         </div>
                         </div>

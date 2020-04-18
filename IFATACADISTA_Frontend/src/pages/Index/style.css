@@ -91,6 +91,10 @@ body{
 .dropdown:hover .dropdown-content {
     display: block;
 }
+.dropdown-content a{
+    display: block;
+    margin:5px;
+}
 
 .nav-search form input{
     outline: none;
@@ -192,9 +196,10 @@ body{
     text-decoration: none;
     color:#fff;
 }
-
-@media (max-width:720px){
+@media (max-width:1000px){
     .content{
         display: block;
+        height: auto;
+        width: 100%;
     }
 }
