@@ -52,6 +52,24 @@
     display: flex;
     margin-top: 5px;
 }
+.notification{
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    background-color: #B064FF;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    animation: move 10s;
+    text-align: center;
+    color:#fff;
+    font-family: sans-serif;
+}
+@keyframes move{
+    0%   {top: -50px;opacity: 0;}
+    50%  {top: 0px;opacity:1}
+    100% {top: -50px;opacity: 0;}
+}
+
 
 @media (max-width:700px){
     .container-login{

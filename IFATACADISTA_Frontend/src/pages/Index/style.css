@@ -114,12 +114,14 @@ body{
 }
 
 .content{
-    height: 500px;
+    height: auto;
     background: linear-gradient(15deg, #B064FF 50%, rgb(25, 9, 43) 50.1%);
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     font-family: sans-serif;
+    padding:20px
 }
 .content div{
     background-color: #fff;
@@ -196,10 +198,11 @@ body{
     text-decoration: none;
     color:#fff;
 }
-@media (max-width:1000px){
+
+/* @media (max-width:1000px){
     .content{
         display: block;
         height: auto;
         width: 100%;
     }
-}
+} */

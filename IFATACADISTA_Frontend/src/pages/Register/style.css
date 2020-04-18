@@ -63,7 +63,7 @@
         font-size: 12px;
     }
 }
-@media (max-width:1000px){
+@media (max-width:1300px){
     .container-register form{
         background: #fff;
         border-radius: 8px;
