@@ -1,12 +1,50 @@
 import React from 'react';
-import { FiArrowRight } from 'react-icons/fi';
+import ReactDOM from 'react-dom';
+import { FiArrowRight, FiShoppingCart } from 'react-icons/fi';
 
 import './style.css';
 import noimg from '../../assets/no-img.png';
 
 export default function Index(){
+    const id_cliente = localStorage.getItem('IDCLIENTE');
+    const cliente_name = localStorage.getItem('CLIENTE');
+    const userNotLogged =   <div>
+                                <li className="nav-session">
+                                    <a href="/login">Login</a>
+                                </li>
+                                <li className="nav-session">
+                                    <a href="/register">Register</a>
+                                </li>
+                            </div>;
+    const userLogged =  <div className="user-area">
+                            <div className="shopping-cart">
+                                <FiShoppingCart size={20} color="B064FF" />
+                            </div>
+                            <div class="dropdown-user">
+                                <span>{cliente_name}</span>
+                                <div class="dropdown-user-content">
+                                    <a href="/" onClick={handleExit}>Sair</a>
+                                </div>
+                            </div>
+                        </div>
+                        ;
+
+
+    function sessionControl(){
+        if(!id_cliente){
+            ReactDOM.render(userNotLogged,document.getElementById('session-control'));
+        }else{
+            ReactDOM.render(userLogged,document.getElementById('session-control'));
+        }
+    }
+
+    async function handleExit(){
+        await localStorage.removeItem('IDCLIENTE');
+        await localStorage.removeItem('CLIENTE');
+        await document.location.reload(true);
+    }
     return(
-        <div>
+        <div onLoad={sessionControl}>
         <nav className="navbar">
             <ul>
                 <li className="nav-logo">
@@ -28,7 +66,7 @@ export default function Index(){
                             <a href="/">Roupas</a>
 
                         </div>
-                        </div>
+                    </div>
                     </li>
                     <li className="nav-item">
                         <a href="/">Sobre</a>
@@ -40,12 +78,8 @@ export default function Index(){
                                 <input type="search" placeholder="Pesquisar"/>
                             </form>
                     </div>
-                    <li className="nav-session">
-                        <a href="/login">Login</a>
-                    </li>
-                    <li className="nav-session">
-                        <a href="/register">Register</a>
-                    </li>
+                    <div className="session-control" id="session-control">
+                    </div>
                 </div>
             </ul>
         </nav>

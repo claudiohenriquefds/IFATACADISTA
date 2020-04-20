@@ -30,12 +30,14 @@ module.exports ={
 
         if(await connection('cliente').where('email',emailLogin) != ''){
             if(await connection('cliente').where('password',password) != ''){
-                return response.json('Logado com sucesso');
+                id_cliente = await connection('cliente').select('id').where('password',password)
+                cliente_name = await connection('cliente').select('name').where('password',password)
+                return response.json({result:'Logado com sucesso',id:id_cliente,cliente:cliente_name });
             }else{
-                return response.json('Senha incorreta');
+                return response.json({result:'Senha incorreta'});
             }
         }else{
-            return response.json('Email Inexistente');
+            return response.json({result:'Email Inexistente'});
         }
 
     }

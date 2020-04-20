@@ -18,15 +18,16 @@ export default function Login(){
 
         try{
             const response = await api.post('login', { emailLogin, passwordLogin });
+            if(response.data.result === 'Logado com sucesso'){
+                localStorage.setItem('IDCLIENTE',response.data.id[0].id);
+                localStorage.setItem('CLIENTE',response.data.cliente[0].name);
+                history.push('/');
+            }
             setNotification('notification');
-            setValueOfRequisition(response.data);
+            setValueOfRequisition(response.data.result);
             setTimeout(function(){
                 setNotification('');
                 setValueOfRequisition('');
-                if(response.status === 'Logado com sucesso'){
-                    // localStorage.setItem('ClienteID',id);
-                    history.push('/');
-                }
             },9000);
         }catch(err){
             setNotification('notification');
