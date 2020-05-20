@@ -22,7 +22,7 @@ module.exports ={
             number,
         });
         
-        return response.json('Usuário cadastrado com sucesso');
+        return response.json({result: 'Usuário cadastrado com sucesso', id:id_usuario, usuario:NomeUsuario });
     },
     async login(request,response){
         const { cpfLogin, passwordLogin } = request.body;
