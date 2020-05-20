@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
-import { FiMail, FiLock, FiArrowLeft } from 'react-icons/fi';
+import { FiLock, FiArrowLeft } from 'react-icons/fi';
+import { FaFingerprint } from 'react-icons/fa';
 import api from '../../services/api';
 
 import './style.css';
@@ -43,10 +44,10 @@ export default function Login(){
             <form onSubmit={handleLogin}>
                 <h1>Bem Vindo</h1>
                 <div className="input-with-icons">
-                    <FiMail size={20} color="#696969"/>
+                    <FaFingerprint size={20} color="#696969"/>
                     <input 
                         type="email" 
-                        placeholder="Insira o seu email"
+                        placeholder="Insira o seu cpf"
                         value={emailLogin}
                         onChange={e=>setEmailLogin(e.target.value)}    
                     />

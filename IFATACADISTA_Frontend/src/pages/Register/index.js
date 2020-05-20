@@ -1,5 +1,5 @@
 import React from 'react';
-import { FiUser, FiLock, FiMail, FiPhone, FiArrowLeft } from 'react-icons/fi';
+import { FiUser, FiLock, FiPhone, FiArrowLeft } from 'react-icons/fi';
 import { FaFingerprint } from 'react-icons/fa';
 
 import './style.css';
@@ -11,9 +11,6 @@ export default function Register(){
                 <h1>Cadastre-se</h1>
                 <div className="input-with-icons">
                     <FiUser size={20} color="#696969"/><input type="text" placeholder="Insira o nome"/>
-                </div>
-                <div className="input-with-icons">
-                    <FiMail size={20} color="#696969"/><input type="email" placeholder="Insira o email"/>
                 </div>
                 <div className="input-with-icons">
                     <FiPhone size={20} color="#696969"/><input type="text" placeholder="Insira o telefone"/>
