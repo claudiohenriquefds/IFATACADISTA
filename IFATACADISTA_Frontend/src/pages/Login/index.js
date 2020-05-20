@@ -7,7 +7,7 @@ import api from '../../services/api';
 import './style.css';
 
 export default function Login(){
-    const [emailLogin,setEmailLogin] = useState('');
+    const [cpfLogin,setCpfLogin] = useState('');
     const [passwordLogin,setPasswordLogin] = useState('');
     const [notification,setNotification] = useState('');
     const [valueOfRequisition,setValueOfRequisition] = useState('');
@@ -18,11 +18,11 @@ export default function Login(){
         e.preventDefault();
 
         try{
-            const response = await api.post('login', { emailLogin, passwordLogin });
+            const response = await api.post('login', { cpfLogin, passwordLogin });
             if(response.data.result === 'Logado com sucesso'){
-                localStorage.setItem('IDCLIENTE',response.data.id[0].id);
-                localStorage.setItem('CLIENTE',response.data.cliente[0].name);
-                history.push('/');
+                localStorage.setItem('IDUSUARIO',response.data.id[0].idUsuario);
+                localStorage.setItem('USUARIO',response.data.usuario[0].NomeUsuario);
+                history.push('/index');
             }
             setNotification('notification');
             setValueOfRequisition(response.data.result);
@@ -46,10 +46,10 @@ export default function Login(){
                 <div className="input-with-icons">
                     <FaFingerprint size={20} color="#696969"/>
                     <input 
-                        type="email" 
+                        type="number" 
                         placeholder="Insira o seu cpf"
-                        value={emailLogin}
-                        onChange={e=>setEmailLogin(e.target.value)}    
+                        value={cpfLogin}
+                        onChange={e=>setCpfLogin(e.target.value)}    
                     />
                 </div>
                 <div className="input-with-icons">
