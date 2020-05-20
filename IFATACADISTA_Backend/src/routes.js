@@ -2,9 +2,9 @@ const express = require('express');
 
 const routes = express.Router();
 
-const ClientController = require('./controllers/ClientController');
+const UserController = require('./controllers/UserController');
 
-routes.post('/login',ClientController.login);
-routes.post('/newclient',ClientController.create);
+routes.post('/',UserController.login);
+routes.post('/newclient',UserController.create);
 
 module.exports = routes;

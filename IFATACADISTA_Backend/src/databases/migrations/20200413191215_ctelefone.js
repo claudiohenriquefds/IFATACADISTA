@@ -5,9 +5,9 @@ exports.up = function(knex) {
       table.string('number').notNullable();
       table.string('description');
 
-      table.string('id_cliente');
+      table.string('id_usuario');
 
-      table.foreign('id_cliente').references('id').inTable('cliente');
+      table.foreign('id_usuario').references('idUsuario').inTable('usuario');
   });
 };
 
