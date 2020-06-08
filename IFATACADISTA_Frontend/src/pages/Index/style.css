@@ -13,16 +13,32 @@
     background-color: #b064ff;
     overflow-x: hidden;
 }
-.sidenav a{
-    margin:5%;
+.dropdown-btn{
+    padding-left: 120px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     text-decoration: none;
     font-size: 20px;
-    color: #000;
-    display: block;
+    color: #fff;
+    display: flex;
     border: none;
     background: none;
     width: 100%;
     text-align: left;
     cursor: pointer;
     outline: none;
+    align-items: center;
+}
+.dropdown-container{
+    padding-left: 100px;
+    display: block;
+}
+.icon-chevron{
+    margin-left: 10px;
+}
+#d-none{
+    display: none;
+}
+#d-block{
+    display: block;
 }
