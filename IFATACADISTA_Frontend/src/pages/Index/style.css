@@ -1,7 +1,7 @@
 .container-index{
     background-color: #fff;
     width: 100%;
-    height: 100vh;
+    height: 85vh;
 }
 .sidenav{
     height: 100%;
@@ -30,8 +30,17 @@
     align-items: center;
 }
 .dropdown-container{
-    padding-left: 100px;
+    background-color: #A366E1;
+    padding: 5px;
+}
+.dropdown-container a{
+    text-decoration: none;
     display: block;
+    justify-content: center;
+    text-align: center;
+    padding: 7px;
+    font-family: sans-serif;
+    color:#fff;
 }
 .icon-chevron{
     margin-left: 10px;
@@ -41,4 +50,42 @@
 }
 #d-block{
     display: block;
+}
+
+.container-main{
+    display: block;
+    justify-content: center;
+    font-family: sans-serif;
+}
+.container-main p{
+    font-size: 75px;
+    margin-left: 650px;
+    margin-top:100px;
+    margin-bottom:0px;
+}
+.container-main span{
+    font-size: 75px;
+    margin-left: 720px;
+    margin-top:150px;
+    margin-bottom: 0;
+}
+.icon-ifatacadista{
+    margin-left: 730px;
+    margin-bottom: 0px;
+    height: 230px;
+    width: 230px;
+    background-color: #696969;
+}
+.exit-button{
+    position: absolute;
+    right: 10px;
+    top: 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.exit-button p{
+    font-size: 20px;
+    color:#696969;
+    font-family: sans-serif;
 }
