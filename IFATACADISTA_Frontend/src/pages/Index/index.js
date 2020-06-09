@@ -1,24 +1,29 @@
 import React, { useState } from 'react';
-import { FiChevronDown } from 'react-icons/fi'
+import { FiChevronDown, FiChevronUp } from 'react-icons/fi'
 
 import './style.css';
 
 export default function Index(){
     const [dpcliente, setDpCliente] = useState("d-none");
     const [dpproduto, setDpProduto] = useState("d-none");
+    const [chevron, setChevron] = useState(<FiChevronDown className="icon-chevron" size={20} color="#fff"/>);
 
     function toggleDropdownCliente(){
         if(dpcliente === "d-none"){
             setDpCliente("d-block");
+            setChevron(<FiChevronUp className="icon-chevron" size={20} color="#fff"/>);
         }else{
             setDpCliente("d-none");
+            setChevron(<FiChevronDown className="icon-chevron" size={20} color="#fff"/>);
         }
     }
     function toggleDropdownPruduto(){
         if(dpproduto === "d-none"){
             setDpProduto("d-block");
+            setChevron(<FiChevronUp className="icon-chevron" size={20} color="#fff"/>);
         }else{
             setDpProduto("d-none");
+            setChevron(<FiChevronDown className="icon-chevron" size={20} color="#fff"/>);
         }
     }
     return(
@@ -37,7 +42,7 @@ export default function Index(){
                 </div>
                 <div>
                     <button onClick={toggleDropdownPruduto} className="dropdown-btn">Produtos 
-                        <FiChevronDown className="icon-chevron" size={20} color="#fff"/>
+                        {chevron}
                     </button>
                     <div className="dropdown-container" id={dpproduto}>
                         <a href="/">Cadastrar Produto</a>
